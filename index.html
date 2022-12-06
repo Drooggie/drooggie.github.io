@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AppLab</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -13,15 +13,15 @@
 <body>
     
     <header>
-        <div class="wrapper container">
+        <div class="d-flex justify-content-between align-items-center container pt-5">
             <img src="./img/AppLab.png" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Key Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testiminici</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><button class="button">Try for free</button></li>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Key Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Testiminici</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                <li class="nav-item"><button class="button">Try for free</button></li>
             </ul>
         </div>
     </header>
@@ -30,21 +30,21 @@
 
         <div class="main">
             
-            <div class="wrapper container">
+            <div class="container">
                 <div class="row">
-                    <div class="main-text col">
+                    <div class="col d-flex flex-column justify-content-center">
 
-                        <div class="main-text-success">
-                            <img src="./img/ok.png" alt="">
-                            <p>#1 Editions Choice App of 2020</p>
-                        </div>
-        
-                        <h1>Best app for your modern lifestyle</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque maxime dolorum, sed a veritatis atque odit deleniti ex alias facilis vitae, rerum, cupiditate asperiores fugiat perspiciatis illo exercitationem eos.</p>
-                        <div class="main-text-button">
-                            <button class="button">Try for free</button>
-                            <a href="#">Watch demo video</a>
-                        </div>
+                            <div class="main-text-success  mb-2">
+                                <img src="./img/ok.png" alt="">
+                                <p>#1 Editions Choice App of 2020</p>
+                            </div>
+            
+                            <h1>Best app for your modern lifestyle</h1>
+                            <p class="mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque maxime dolorum, sed a veritatis atque odit deleniti ex alias facilis vitae, rerum, cupiditate asperiores fugiat perspiciatis illo exercitationem eos.</p>
+                            <div class="main-text-button">
+                                <button class="button">Try for free</button>
+                                <a href="#">Watch demo video</a>
+                            </div>
         
                     </div>
         
@@ -58,57 +58,57 @@
         </div>
 
         <div class="trusted pt-5">
-            <div class="wrapper container">
-                <p>Trusted by companies like</p>
-                <ul class="row">
-                    <li class="col"><img src="./img/img-2.png" alt=""></li>
-                    <li class="col"><img src="./img/img-3.png" alt=""></li>
-                    <li class="col"><img src="./img/img-4.png" alt=""></li>
-                    <li class="col"><img src="./img/img-5.png" alt=""></li>
-                    <li class="col"><img src="./img/img-6.png" alt=""></li>
+            <div class="container">
+                <p class="text-center">Trusted by companies like</p>
+                <ul class="row align-items-center">
+                    <li class="col m-3"><img src="./img/img-2.png" alt=""></li>
+                    <li class="col m-3"><img src="./img/img-3.png" alt=""></li>
+                    <li class="col m-3"><img src="./img/img-4.png" alt=""></li>
+                    <li class="col m-3"><img src="./img/img-5.png" alt=""></li>
+                    <li class="col m-3"><img src="./img/img-6.png" alt=""></li>
                 </ul>
             </div>
         </div>
 
-        <div class="featured">
-            <div class="wrapper container">
+        <div class="featured mt-5 mb-5">
+            <div class="container">
                 <div class="row">
 
-                    <div class="featured-img col-sm-6">
+                    <div class="featured-img d-flex justify-content-center align-items-center col-md-6">
                         <img src="./img/img-7.png" alt="">
                     </div>
         
-                    <div class="featured-text col-sm-6">
-                        <h1>Awesome apps <br> features</h1>
+                    <div class="col-md-6">
+                        <h2>Awesome apps features</h2>
                         <p>Increase productivity with a simple to-do app, app for managing your personal budgets.</p>
                         <ul>
         
-                            <li>
-                                <div style="background-color: #ffecef;" class="featured-text-logo">
+                            <li class="d-flex align-items-center">
+                                <div style="background-color: #ffecef;" class="d-flex align-items-center">
                                     <img src="./img/speed.png" alt="">
                                 </div>
-                                <div class="featured-text-info">
-                                    <h2 style="color:#f55767;">Fast Performance</h2>
+                                <div class="featured-text-info p-3">
+                                    <h3 style="color:#f55767;">Fast Performance</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quo nam optio, ab expedita consectetur laudantium corporis repudiandae necessitatibus doloribus consequatur placeat voluptatem ad pariatur animi voluptatum vel labore non?</p>
                                 </div>
                             </li>
         
-                            <li>
-                                <div style="background-color: #f4f4ff;" class="featured-text-logo">
+                            <li class="d-flex align-items-center">
+                                <div style="background-color: #f4f4ff;" class="d-flex align-items-center">
                                     <img src="./img/prototyping.png" alt="">
                                 </div>
-                                <div class="featured-text-info">
-                                    <h2 style="color:#2563ff;">Fast Performance</h2>
+                                <div class="featured-text-info p-3">
+                                    <h3 style="color:#2563ff;">Fast Performance</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta nostrum ut id delectus explicabo, corrupti unde eligendi aspernatur nam, dignissimos illo velit mollitia tenetur, autem consectetur repellat architecto aliquam?</p>
                                 </div>
                             </li>
         
-                            <li>
-                                <div style="background-color: #e4ffee;" class="featured-text-logo">
+                            <li class="d-flex align-items-center">
+                                <div style="background-color: #e4ffee;" class="d-flex align-items-center">
                                     <img src="./img/vector.png" alt="">
                                 </div>
-                                <div class="featured-text-info">
-                                    <h2 style="color:#40975f;">Fast Performance</h2>
+                                <div class="featured-text-info p-3">
+                                    <h3 style="color:#40975f;">Fast Performance</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor ipsa quod id dolores dolorum consequuntur provident porro distinctio explicabo alias fugiat eaque soluta veniam odio a, dolorem numquam velit!</p>
                                 </div>
                             </li>
@@ -120,32 +120,34 @@
             </div>
         </div>
 
-        <div class="jackpots">
-            <div class="wrapper container">
+        <div class="jackpots mt-5 mb-5">
+            <div class="container">
 
-                <div class="jackpots-head">
-                    <h1>Smart jackpots that you may love this anytime anywhere</h1>
-                    <div class="jackpots-head-space"></div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore dolorum necessitatibus sint consectetur pariatur a explicabo excepturi dicta! Voluptatem ipsum animi, aut esse aliquid ut veritatis quisquam inventore magni!</p>
+                <div class="row">
+                    <div class="col-md-5"><h2>Smart jackpots that you may love this anytime anywhere</h2></div>
+                    <div class="col"><div class="jackpots-head-space mx-auto d-block"></div></div>
+                    <div class="col-md-5">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore dolorum necessitatibus sint consectetur pariatur a explicabo excepturi dicta! Voluptatem ipsum animi, aut esse aliquid ut veritatis quisquam inventore magni!</p>
+                    </div>    
                 </div>
 
-                <div class="jackpots-main">
+                <div class="d-flex align-items-center justify-content-evenly">
 
-                    <div class="jackpots-main-div">
+                    <div class="p-4">
                         <img src="./img/bill.png" alt="">
-                        <h2 style="color:#f55767;"">Automatic Payouts</h2>
+                        <h3 class="mt-4 mb-4" style="color:#f55767;"">Automatic Payouts</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus, corrupti sapiente autem voluptatum nostrum perspiciatis, illo possimus laboriosam quibusdam ea quam itaque nesciunt rerum, aut cumque impedit enim illum?</p>
                     </div>
 
-                    <div class="jackpots-main-div">
+                    <div class="p-4">
                         <img src="./img/network.png" alt="">
-                        <h2 style="color:#2563ff;"">Network Effect</h2>
+                        <h3 class="mt-4 mb-4" style="color:#2563ff;"">Network Effect</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus, corrupti sapiente autem voluptatum nostrum perspiciatis, illo possimus laboriosam quibusdam ea quam itaque nesciunt rerum, aut cumque impedit enim illum?</p>
                     </div>
 
-                    <div class="jackpots-main-div">
+                    <div class="p-4">
                         <img src="./img/badge.png" alt="">
-                        <h2 style="color:#40975f;">BIgger Forwards Methods</h2>
+                        <h3 class="mt-4 mb-4" style="color:#40975f;">BIgger Forwards Methods</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus, corrupti sapiente autem voluptatum nostrum perspiciatis, illo possimus laboriosam quibusdam ea quam itaque nesciunt rerum, aut cumque impedit enim illum?</p>
                     </div>
 
@@ -154,99 +156,111 @@
             </div>
         </div>
 
-        <div class="integration">
-            <div class="wrapper container">
-                <img src="./img/img-8.png" alt="">
-                <div class="integration-text">
-                    <h1>Designed built by the latest code integration</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deserunt iure itaque et, sed harum maxime repudiandae quod consectetur assumenda unde a obcaecati dignissimos tempore voluptas commodi nisi corporis. Consequatur!</p>
-                    <button class="button">Learn more</button>
+        <div class="integration container">
+            <div class="row">
+                <img class="col-md-6" src="./img/img-8.png" alt="">
+                <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+                    <h2>Designed built by the latest code integration</h2>
+                    <p class="mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deserunt iure itaque et, sed harum maxime repudiandae quod consectetur assumenda unde a obcaecati dignissimos tempore voluptas commodi nisi corporis. Consequatur!</p>
+                    <button style="width: 30%;" class="button">Learn more</button>
                 </div>
             </div>
         </div>
 
-        <div class="choose">
-            <div class="wrapper container">
-                <h1>Why you should choose our app</h1>
-                <p style="padding:0px 20%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, aut facilis molestias voluptatum doloribus quisquam, laboriosam earum at voluptas, officiis iusto reprehenderit harum quam repudiandae quod sunt fugit beatae error.</p>
+        <div class="choose mt-5">
+            <div class="container">
+                <h1 class="text-center">Why you should choose our app</h1>
+                <p class="text-center" style="padding:0px 20%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, aut facilis molestias voluptatum doloribus quisquam, laboriosam earum at voluptas, officiis iusto reprehenderit harum quam repudiandae quod sunt fugit beatae error.</p>
                 
-                <div class="choose-var">
+                <div class="row">
 
-                    <div class="choose-var-div">
-                        <img src="./img/web-design.png" alt="">
-                        <h2>App Development</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro provident repudiandae exercitationem, quis cupiditate impedit inventore quasi, tenetur ducimus voluptatem ad dolore a distinctio fugiat adipisci illum architecto recusandae reprehenderit?</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/web-design.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">App Development</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
-                    <div class="choose-var-div">
-                        <img src="./img/trophy.png" alt="">
-                        <h2>10 Times Award</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium praesentium temporibus commodi architecto, exercitationem tempore reprehenderit nulla consequuntur porro deserunt possimus? Perferendis molestiae, consequatur et rem quia quam provident eius.</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/trophy.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">10 Times Award</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
-                    <div class="choose-var-div">
-                        <img src="./img/netbase.png" alt="">
-                        <h2>Cloud Storage</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores magni dicta cum dolorem esse minus, reprehenderit iure repellendus exercitationem quam dolores? Placeat repudiandae distinctio rem earum autem temporibus natus.</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/netbase.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">Cloud Storage</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
-                    <div class="choose-var-div">
-                        <img src="./img/customer-support.png" alt="">
-                        <h2>Customization</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque fugit recusandae ut libero asperiores, rerum maiores. Incidunt consequatur suscipit enim totam alias, recusandae odit veniam ut voluptatibus nobis provident.</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/customer-support.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">Customization</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
-                    <div class="choose-var-div">
-                        <img src="./img/ui.png" alt="">
-                        <h2>UX Planning</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur, porro dolores excepturi soluta explicabo ratione veritatis nulla tenetur, atque, ab dolore similique molestiae placeat! Accusantium neque suscipit nulla molestias?</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/ui.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">UX Planning</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
-                    <div class="choose-var-div">
-                        <img src="./img/customer-service.png" alt="">
-                        <h2>Customer Support</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sed natus, itaque fuga, soluta nisi aliquid ipsum quaerat amet vitae est aut beatae, corporis vero tempora? Nisi maxime assumenda laboriosam.</p>
+                    <div class="col-md-4">
+                        <div class="card-body p-5 d-flex flex-column align-items-center">
+                            <img src="./img/customer-service.png" alt="" class="card-img-top">
+                            <h4 class="card-title mt-4 mb-2">Customer Support</h4>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium earum quis magni sunt dicta voluptate dolores saepe. Similique, distinctio incidunt accusamus quaerat earum laboriosam nobis odit architecto dolorum officia!</p>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
         </div>
 
-        <div class="build">
-            <div class="wrapper container">
+        <div class="build mt-5">
+            <div class="container">
 
-                <div class="build-header">
-                    <h1>Ultimate features that we built</h1>
-                    <p>The rise of mobile devices transforms the way we consume information entirely</p>
+                <div class="build-text">
+                    <h2>Ultimate features that we built</h2>
+                    <p class="pt-3">The rise of mobile devices transforms the way we consume information entirely</p>
                 </div>
 
-                <div class="build-main">
-                    <div class="build-main-info">
-
-                        <div class="choose-var-div">
+                <div class="build-item">
+                    <div class="row align-items-center">
+                        <div class="col p-3">
                             <img src="./img/web-design.png" alt="">
-                            <h2>App Development</h2>
+                            <h5>App Development</h5>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro provident repudiandae exercitationem, quis cupiditate </p>
                         </div>
 
-                        <div class="choose-var-div">
+                        <div class="col p-3">
                             <img src="./img/ui.png" alt="">
-                            <h2>UX Planning</h2>
+                            <h5>UX Planning</h5>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro provident repudiandae exercitationem, quis cupiditate </p>
                         </div>
-
-                        <div class="choose-var-div">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col p-3">
                             <img src="./img/netbase.png" alt="">
-                            <h2>Cloud Storage</h2>
+                            <h5>Cloud Storage</h5>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro provident repudiandae exercitationem, quis cupiditate </p>
                         </div>
 
-                        <div class="choose-var-div">
+                        <div class="col p-3">
                             <img src="./img/customer-service.png" alt="">
-                            <h2>Customer Support</h2>
+                            <h5>Customer Support</h5>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro provident repudiandae exercitationem, quis cupiditate </p>
                         </div>
-
                     </div>
                 </div>
 
@@ -255,47 +269,47 @@
             </div>
         </div>
 
-        <div class="payment">
-            <div class="wrapper container">
+        <div class="payment mt-5">
+            <div class="container d-flex flex-column align-items-center">
 
-                <h1>Get awesome features, without extra changes</h1>
-                <p class="payment-h-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sapiente dolore quia distinctio cupiditate iure laborum molestiae corrupti temporibus, facere placeat. Consectetur, voluptates aspernatur? Temporibus a doloremque libero iusto incidunt.</p>
+                <h1 class="text-center">Get awesome features, without extra changes</h1>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sapiente dolore quia distinctio cupiditate iure laborum molestiae corrupti temporibus, facere placeat. Consectetur, voluptates aspernatur? Temporibus a doloremque libero iusto incidunt.</p>
                 <div class="payment-switch">
                     <button class="button">Monthly</button>
                     <button class="button-p">Annually</button>
                 </div>
-                <ul>
+                <ul class="d-flex align-items-start">
 
                     <li>
-                        <div class="payment-cost">
-                            <div class="payment-cost-header">
+                        <div class="payment-cost d-flex flex-column align-items-center mt-4">
+                            <div class="d-flex align-items-end">
                                 <h1>$0</h1> <p class="payment-p">/month</p>
                             </div>
                             <h2>Business Class</h2>
-                            <p>For smail teams or office</p>
+                            <p class="text-center">For smail teams or office</p>
                         </div>
-                        <div class="payment-info">
-                            <p>Drag & Drop Builder</p>
-                            <p>1,000 of Templates</p>
-                            <p>Blog Support Tools</p>
-                            <p>eCommerce Store</p>
+                        <div>
+                            <p class="mt-4">Drag & Drop Builder</p>
+                            <p class="mt-4">1,000 of Templates</p>
+                            <p class="mt-4">Blog Support Tools</p>
+                            <p class="mt-4">eCommerce Store</p>
                         </div>
                         <button>Start free trail</button>
                     </li>
 
                     <li>
-                        <div class="payment-cost">
-                            <div class="payment-cost-header">
-                                <h1>$99</h1> <p class="payment-p">/month</p>
+                        <div class="payment-cost d-flex flex-column align-items-center mt-4"">
+                            <div class="d-flex align-items-end">
+                                <h1>$99</h1> <p class="ms-2"">/month</p>
                             </div>
                             <h2>Pro Master</h2>
                             <p>For Best opportunities</p>
                         </div>
-                        <div class="payment-info">
-                            <p>Drag & Drop Builder</p>
-                            <p>1,000 of Templates</p>
-                            <p>Blog Support Tools</p>
-                            <p>eCommerce Store</p>
+                        <div>
+                            <p class="mt-4">Drag & Drop Builder</p>
+                            <p class="mt-4">1,000 of Templates</p>
+                            <p class="mt-4">Blog Support Tools</p>
+                            <p class="mt-4">eCommerce Store</p>
                         </div>
                         <button>Subsribe Now</button>
                         <a href="#">Or Start 14 days trial</a>
@@ -306,24 +320,30 @@
         </div>
 
         <div class="client">
-            <div class="wrapper container">
+            <div class="container">
 
-                <div class="client-info">
-                    <h1>Meet Cient Satisfaction by using product</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi corporis obcaecati corru</p>
-                    <img src="./img/star star star star star.png" alt="">
-                    <h2>User friendly & Customizable</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem numquam omnis recusandae repellendus quasi sit, reiciendis alias, libero ducimus nobis, veniam ipsum. Pariatur at est veritatis reprehenderit magnam in?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur enim doloremque veritatis laborum magnam eveniet odit rem quam voluptatibus optio? Saepe, at. Corrupti exercitationem, quidem laboriosam optio vitae sed tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque animi expedita, eligendi commodi tempore quas adipisci dolorem unde aliquid, voluptate pariatur laudantium omnis quasi consequatur nostrum quam recusandae a. Officiis.</p>
-                    <div class="client-prof">
-                        <img src="./img/adult-beard-boy-220453.png" alt="">
-                        <div class="client-prof-info">
-                            <h3>Zaltan Norneth</h3>
-                            <p>CEO of Pixer Lab</p>
-                        </div>
-                        <div class="client-prof-pointer">
-                            <img src="./img/pointer.png" alt="">
+                <div class="row">
+
+                    <div class="col none"></div>
+
+                    <div class="col">
+                        <h3>Meet Cient Satisfaction by using product</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sequi corporis obcaecati corru</p>
+                        <img src="./img/star star star star star.png" alt="">
+                        <h4 class="my-3">User friendly & Customizable</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem numquam omnis recusandae repellendus quasi sit, reiciendis alias, libero ducimus nobis, veniam ipsum. Pariatur at est veritatis reprehenderit magnam in?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur enim doloremque veritatis laborum magnam eveniet odit rem quam voluptatibus optio? Saepe, at. Corrupti exercitationem, quidem laboriosam optio vitae sed tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque animi expedita, eligendi commodi tempore quas adipisci dolorem unde aliquid, voluptate pariatur laudantium omnis quasi consequatur nostrum quam recusandae a. Officiis.</p>
+                        <div class="client-prof">
+                            <img src="./img/adult-beard-boy-220453.png" alt="">
+                            <div class="client-prof-info">
+                                <h3>Zaltan Norneth</h3>
+                                <p>CEO of Pixer Lab</p>
+                            </div>
+                            <div class="client-prof-pointer">
+                                <img src="./img/pointer.png" alt="">
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
