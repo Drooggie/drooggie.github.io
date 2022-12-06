@@ -12,15 +12,13 @@ body{
 p{
     font-family: 'regular';
     color: #616368;
+    font-size: 1vw;
 }
 h1{
     font-family: 'bold';
 }
 h2{
     font-family: 'bold';
-}
-.wrapper{
-    padding: 0px 15%;
 }
 .space{
     width: 50%;
@@ -52,6 +50,7 @@ header .wrapper ul li{
 header .wrapper ul li a{
     font-family: 'regular';
     text-decoration: none;
+    font-size: 1vw;
 }
 /* header end */
 
@@ -60,6 +59,9 @@ header .wrapper ul li a{
     background: url(./img/back-1.png) no-repeat;
     background-size: cover;
     background-position: 50% 30%;
+}
+.main-img img{
+    width: 80%;
 }
 .main .wrapper{
     display: flex;
@@ -71,22 +73,23 @@ header .wrapper ul li a{
     justify-content: center;
 }
 .main-text h1{
-    font-size: 60px;
+    font-size: 3vw;
     padding-top: 30px;
 }
 .main-text p{
-    font-size: 18px;
+    font-size: 1vw;
     padding: 40px 0px;
     font-family: 'regular';
 }
 .main-text a{
     margin-left: 28px;
+    font-size: 1vw;
     color: #2500f9;
     font-family: 'regular';
     text-decoration: none;
 }
 .main-text-success{
-    width: 360px;
+    width: 60%;
     box-sizing: border-box;
     background-color: #e2eaed;
     border-radius: 20px;
@@ -108,9 +111,6 @@ header .wrapper ul li a{
 /* Main end */
 
 /* trusted start */
-.trusted{
-    padding-top: 120px;
-}
 .trusted .wrapper{
     display: flex;
     flex-direction: column;
@@ -121,11 +121,13 @@ header .wrapper ul li a{
     font-family: 'regular';
 }
 .trusted ul{
-    display: flex;
     align-items: center;
 }
 .trusted ul li{
     margin: 30px;
+}
+.trusted ul li img{
+    width: 80%;
 }
 /* trusted end */
 
@@ -143,10 +145,16 @@ header .wrapper ul li a{
     font-size: 20px;
     padding: 20px 0px;
 }
+.featured-img{
+    display: flex;
+    align-items: center;
+}
+.featured-img img{
+    width: 100%;
+}
 .featured-text ul li{
     display: flex;
     align-items: center;
-    padding-top: 50px;
 }
 .featured-text-logo{
     padding: 20px;
@@ -432,6 +440,10 @@ header .wrapper ul li a{
 .question {
     padding-bottom: 100px;
 }
+.question a{
+    color: black;
+    text-decoration: none;
+}
 .question h1{
     font-size: 40px;
 }
@@ -469,7 +481,7 @@ header .wrapper ul li a{
     display: flex;
 }
 .download h1{
-    font-size: 40px;
+    font-size: 3vw;
 }
 .download p{
     padding: 30px 0px;
@@ -524,12 +536,6 @@ footer ul li a{
     }
     .main{
         background-position: 50% -30%;
-    }
-    .featured-img{
-        margin: 20px 5% 0px 0px;
-    }
-    .featured-img img{
-        max-height: 700px;
     }
     .client{
         background-position: 0% 50%;
