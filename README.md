@@ -14,6 +14,9 @@
     <img src='https://img.shields.io/badge/WhatsApp-green?logo=whatsapp&logoColor=white' />
   </a>
 </div>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=drooggie&style=flat-square&color=blue" alt=""/>
+</div>
 &nbsp;
 
 <div align="center">
@@ -26,4 +29,8 @@
 ##### My languages and tools:
  - HTML/CSS <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="25" height="25"/>   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="25" height="25"/>  
  - JavaScript <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="25" height="25"/>
- - DOM 
+ - React 
+ - Redux 
+
+#### Stats
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=drooggie&theme=dark&background=000000)](https://git.io/streak-stats)
