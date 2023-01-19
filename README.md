@@ -1,6 +1,7 @@
 <div id='header' align='center'>
-  <img  width="300"/>
+  <img src="https://drooggie.github.io/programming-concept-illustration_114360-1670.webp" width="100"/>
 </div>
+&nbsp;
 
 <div id='links' align='center'>
   <a href='https://telegram.me/oraz_norlan'>
@@ -13,6 +14,7 @@
     <img src='https://img.shields.io/badge/WhatsApp-green?logo=whatsapp&logoColor=white' />
   </a>
 </div>
+&nbsp;
 
 <div align="center">
   <img src="https://drooggie.github.io/6vIk.gif" />
