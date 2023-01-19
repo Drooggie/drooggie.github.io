@@ -17,6 +17,13 @@
 &nbsp;
 
 <div align="center">
-  <h1>Welcome <img src="https://drooggie.github.io/Be.gif" width="30" /></h1>
+  <h1>Welcome <img src="https://drooggie.github.io/Be.gif" width="30"/></h1>
   <img src="https://drooggie.github.io/6vIk.gif" />
 </div>
+&nbsp;
+
+### I am <font size="7" >**Front-End**</font> developer. <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+##### My languages and tools:
+ - HTML/CSS <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="25" height="25"/>   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="25" height="25"/>  
+ - JavaScript <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="25" height="25"/>
+ - DOM 
