@@ -29,8 +29,12 @@
 ##### My languages and tools:
  - HTML/CSS <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="25" height="25"/>   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="25" height="25"/>  
  - JavaScript <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="25" height="25"/>
- - React 
- - Redux 
+ - React <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="25" height="25"/> 
+ - Redux <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="25" height="25"/> 
 
 #### Stats
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=drooggie&theme=dark&background=000000)](https://git.io/streak-stats)
+
+
+
+
