@@ -17,7 +17,7 @@ body {
 }
 .navbar.active span {
   transform: rotate(0deg);
-  left: 27%;
+  left: 27.2%;
   background-color: black;
   box-shadow: none;
 }
@@ -29,6 +29,12 @@ body {
 }
 .navbar ul a {
   text-decoration: none;
+  color: black;
+  font-weight: 470;
+  transition: 0.3s;
+}
+.navbar ul a:hover {
+  opacity: 0.5;
 }
 .navbar .line {
   position: absolute;
@@ -41,9 +47,9 @@ body {
 .navbar span {
   display: block;
   width: 20px;
-  height: 2px;
+  height: 3px;
   background-color: crimson;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   position: absolute;
   right: 20px;
   transition: 2s;
