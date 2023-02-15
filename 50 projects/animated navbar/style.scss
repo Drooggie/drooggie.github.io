@@ -1,0 +1,61 @@
+body {
+    background-color: aqua;
+}
+
+.navbar {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    overflow: hidden;
+    transition: 2s;
+    &.active {
+        width: 40px;
+        ul {
+            margin-left: 50px;
+        }
+        span {
+            transform: rotate(0deg);
+            left: 27%;
+            background-color: black;
+            box-shadow: none;
+        }
+        .line-1 {
+            top: 25%;
+        }
+        .line-2 {
+            top: 65%;
+        }
+    }
+    ul a {
+        text-decoration: none;
+    }
+    .line {
+        position: absolute;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        right: 5px;
+        transition: 2s;
+    }
+    span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: crimson;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        right: 20px;
+        transition: 2s;
+        left: 25%;
+        top: 50%;
+    }
+}
+
+.line {
+    &-1 {
+        transform: rotate(580deg);
+    }
+    &-2 {
+        transform: rotate(-580deg);
+    }
+}
