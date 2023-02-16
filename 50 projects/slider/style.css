@@ -1,0 +1,35 @@
+.slider {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider-container {
+  display: flex;
+  transition: 1s;
+}
+.slider-container img {
+  text-align: center;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  border-radius: 50%;
+  border-width: 1px;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.slider .next {
+  right: 0;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 1200px;
+}/*# sourceMappingURL=style.css.map */
