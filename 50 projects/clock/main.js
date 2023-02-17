@@ -2,7 +2,7 @@ const html = document.querySelector('html')
 const btn = document.querySelector('button')
 
 btn.addEventListener('click', () => {
-     html.classList.toggle('dark')
+     html.classList.toggle('dark');
     (html.classList[0] === 'dark') ? btn.innerText = 'Light Mode' : btn.innerText = 'Dark Mode'
 })
 
