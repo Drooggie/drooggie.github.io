@@ -50,6 +50,15 @@ function setEventListener(domObject, put) {
         forCopy.select()
         document.execCommand('copy')
         forCopy.remove()
+
+        const copied = document.createElement('div')
+        copied.classList.add('translation__copied')
+        copied.innerText = 'Copied'
+
+        domObject.appendChild(copied)
+        setTimeout(() => {
+            copied.remove()
+        }, 1000)
     })
 }
 

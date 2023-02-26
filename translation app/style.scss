@@ -68,4 +68,26 @@ button {
 }
 }
 
+&__copy {
+    position: relative;
+}
+&__copied {
+    background-color: #544a7d;
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: hide 1s linear forwards;
+}
+
+}
+
+@keyframes hide {
+    to {
+        opacity: 0;
+    }
 }
