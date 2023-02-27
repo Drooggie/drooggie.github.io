@@ -1,5 +1,6 @@
 const selects = document.querySelectorAll('.translation__language')
 const copyButtons = document.querySelectorAll('.translation__copy')
+const speechBtn = document.querySelectorAll('.translation__sound')
 const translateBtn = document.querySelector('.translation__btn')
 const textInput = document.getElementById('input')
 const textOutput = document.getElementById('output')
@@ -15,14 +16,18 @@ selects.forEach(select => {
     }
 })
 
-setEventListener(copyButtons[0], textInput)
-setEventListener(copyButtons[1], textOutput)
+
+setEventListener('copy', copyButtons[0], textInput)
+setEventListener('copy', copyButtons[1], textOutput)
+
+setEventListener('speech', speechBtn[0], selects[0], textInput)
+setEventListener('speech', speechBtn[1], selects[1], textOutput)
 
 
-translateBtn.addEventListener('click', getTranslationData)
+translateBtn.addEventListener('click', translate)
 
 
-function getTranslationData() {
+function translate() {
     let inputLang,
         outputLang
 
@@ -41,25 +46,65 @@ function getTranslationData() {
         })
 }
 
-function setEventListener(domObject, put) {
-    domObject.addEventListener('click', () => {
-        const forCopy = document.createElement('textarea')
-        forCopy.value = put.value
+function setEventListener(type, domObject, from, textarea = '') {
+
+    (type === 'copy')   ? domObject.addEventListener('click', () => copy(domObject ,from)) : '';
+
+    (type === 'speech') ? domObject.addEventListener('click', () => textToSpeach(from, textarea)) : '';
+}
+
+function copy(domObject ,from) {
+    const forCopy = document.createElement('textarea')
+    forCopy.value = from.value
         
-        document.body.appendChild(forCopy)
-        forCopy.select()
-        document.execCommand('copy')
-        forCopy.remove()
+    document.body.appendChild(forCopy)
+    forCopy.select()
+    document.execCommand('copy')
+    forCopy.remove()
 
-        const copied = document.createElement('div')
-        copied.classList.add('translation__copied')
-        copied.innerText = 'Copied'
+    const copied = document.createElement('div')
+    copied.classList.add('translation__copied')
+    copied.innerText = 'Copied'
 
-        domObject.appendChild(copied)
-        setTimeout(() => {
-            copied.remove()
-        }, 1000)
-    })
+    domObject.appendChild(copied)
+    setTimeout(() => {
+        copied.remove()
+    }, 1000)
+}
+
+function textToSpeach(from, text) {
+    const utterThis = new SpeechSynthesisUtterance(text.value),
+          synth = window.speechSynthesis
+
+    let   voices,
+          selectedVoice
+
+    const toGetVoices = setInterval(() => {
+        voices = synth.getVoices()
+        if(voices === []) return
+        clearInterval(toGetVoices)
+
+        voices.forEach(voice => {
+            const selectedOpt = from.querySelectorAll('option')[from.selectedIndex]
+            if(voice.lang === selectedOpt.value) {
+                selectedVoice = voice
+            }
+        })
+
+        utterThis.addEventListener('end', () => {
+            console.log('Onend completed')
+        })
+        utterThis.addEventListener('error', () => {
+            throw new Error('Error')
+        })
+
+        utterThis.voice = selectedVoice
+        synth.speak(utterThis)
+
+    }, 100)
 }
 
 import { languages } from './modules/language.js'
+
+// text to speech
+// selected language in LS
