@@ -13,8 +13,12 @@ selects.forEach(select => {
         option.setAttribute('value', key)
         
         select.appendChild(option)
+        select.addEventListener('click', updateLS)
     }
 })
+
+selects[0].selectedIndex = localStorage.getItem('input')
+selects[1].selectedIndex = localStorage.getItem('output')
 
 
 setEventListener('copy', copyButtons[0], textInput)
@@ -44,6 +48,8 @@ function translate() {
             const {responseData : {translatedText}} = data
             textOutput.value = translatedText
         })
+
+    updateLS()
 }
 
 function setEventListener(type, domObject, from, textarea = '') {
@@ -90,7 +96,7 @@ function textToSpeach(from, text) {
                 selectedVoice = voice
             }
         })
-        
+
         utterThis.addEventListener('error', () => {
             throw new Error('Error')
         })
@@ -99,6 +105,11 @@ function textToSpeach(from, text) {
         synth.speak(utterThis)
 
     }, 100)
+}
+
+function updateLS() {
+    localStorage.setItem('input', selects[0].selectedIndex)
+    localStorage.setItem('output', selects[1].selectedIndex)
 }
 
 import { languages } from './modules/language.js'
