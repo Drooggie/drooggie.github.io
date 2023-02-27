@@ -90,10 +90,7 @@ function textToSpeach(from, text) {
                 selectedVoice = voice
             }
         })
-
-        utterThis.addEventListener('end', () => {
-            console.log('Onend completed')
-        })
+        
         utterThis.addEventListener('error', () => {
             throw new Error('Error')
         })
