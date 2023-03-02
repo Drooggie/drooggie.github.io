@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: crimson;
+}
+
+.hidden {
+    display: none;
+}
+
+.notes {
+
+&__add {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+&__main {
+    margin-top: 10%;
+    
+}
+&__card {
+    width: 300px;
+    box-shadow: 0 0 10px #333;
+    margin: 20px;
+    transition: 1s;
+    animation: show 1s linear;
+
+&-header {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+&-input {
+    font-size: 26px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    width: 70%;
+}
+&-body {
+    background-color: white;
+    padding: 20px;
+    min-height: 200px;
+
+}
+&-text {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+}
+
+&__btn {
+
+&-change {
+    background-color: rgb(20, 173, 122);
+}
+&-delete {
+    background-color: crimson;
+}
+button {
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    border: none;
+}
+}
+}
+
+@keyframes show {
+   0% {
+    opacity: 0;
+   }
+   100% {
+    opacity: 1;
+   }
+}
